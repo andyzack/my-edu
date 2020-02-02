@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage" : ".",
+  "homepage" : "http://andyzack.github.io/my-edu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
