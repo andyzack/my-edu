@@ -9,12 +9,6 @@ function Step1(props) {
       {/* ACTIVITY HEADING SECTION */}
       <section className="bg-gradient-blue-title">
         <div className="flex justify-center items-center pt5">
-          <button className="f3 fw4 no-underline grow v-mid light-blue bg-transparent br3 bn ph2 pv1 absolute right-2 top-2 open-sans" 
-            onClick={e => {
-              props.handleModal();
-            }}
-          >x
-          </button>
           <div className="pa0 tl nb4 mt2">
             <img
               src={props.categoryicon}
