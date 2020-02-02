@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-edu/static/css/main.d1b05096.chunk.css",
+    "main.js": "/my-edu/static/js/main.593e97af.chunk.js",
+    "main.js.map": "/my-edu/static/js/main.593e97af.chunk.js.map",
+    "runtime-main.js": "/my-edu/static/js/runtime-main.2ead8d31.js",
+    "runtime-main.js.map": "/my-edu/static/js/runtime-main.2ead8d31.js.map",
+    "static/js/2.b6fabe4d.chunk.js": "/my-edu/static/js/2.b6fabe4d.chunk.js",
+    "static/js/2.b6fabe4d.chunk.js.map": "/my-edu/static/js/2.b6fabe4d.chunk.js.map",
+    "index.html": "/my-edu/index.html",
+    "precache-manifest.fe3341b6b1cde1420ea1d2b0bdc93a3b.js": "/my-edu/precache-manifest.fe3341b6b1cde1420ea1d2b0bdc93a3b.js",
+    "service-worker.js": "/my-edu/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/my-edu/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.b6fabe4d.chunk.js.LICENSE.txt": "/my-edu/static/js/2.b6fabe4d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/my-edu/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ead8d31.js",
+    "static/js/2.b6fabe4d.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.593e97af.chunk.js"
+  ]
+}
