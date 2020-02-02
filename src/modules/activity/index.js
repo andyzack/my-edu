@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Step1 from './step1';
 import Step2 from './step2';
@@ -12,8 +13,8 @@ class Activity extends Component {
     this.state = {
       currentStep: 1,
       show: false,
-      totaldays: 287,
-      deltadays: +26,
+      totaldays: '287',
+      deltadays: 26,
       totalxp: 3244,
       deltaxp: -420,
       title: "Bachelor of Communications (Media)",
@@ -21,7 +22,20 @@ class Activity extends Component {
       category: "Education",
       categoryicon: iconcategory,
     }
-  }
+  }  
+
+  static defaultProps = {
+    currentStep: 1,
+    show: false,
+    totaldays: 287,
+    deltadays: 26,
+    totalxp: 3244,
+    deltaxp: -420,
+    title: "Bachelor of Communications (Media)",
+    subtitle: "Bachelor Degree",
+    category: "Education",
+    categoryicon: "iconcategory",
+  };
 
   handleModal = event => {
     this.setState({
@@ -54,7 +68,11 @@ class Activity extends Component {
     }
   }
   
-  _next = () => {
+  /*
+  * the functions for our button
+  */
+
+  _continue = () => {
     let currentStep = this.state.currentStep
     if (currentStep === 3) {
       this.setState({
@@ -67,16 +85,12 @@ class Activity extends Component {
     })
   }
 
-  /*
-  * the functions for our button
-  */
-
-  nextButton(){
+  continueButton(){
     return (
       <button className="primary-button f4 no-underline grow v-mid white bg-transparent bw1 ba1 b--light-blue br3 ph4 pv3 mb3 mt3"
         type="button"
         onClick={
-          this._next
+          this._continue
           }
         >
         Continue
@@ -146,7 +160,7 @@ class Activity extends Component {
             categoryicon={this.state.categoryicon}
           />
 
-          {this.state.currentStep === 3 ? this.closeButton() : this.nextButton()}
+          {this.state.currentStep === 3 ? this.closeButton() : this.continueButton()}
 
           <div className="mt3 az-progress-bar">
             <span className={" b1 br-100 ma2 pa1 dib " + this.progressBar(1)}></span>
@@ -158,6 +172,17 @@ class Activity extends Component {
       </div>
     );
   }
+}
+
+Activity.propTypes = {
+  totaldays: PropTypes.number.isRequired,
+  totalxp: PropTypes.number,
+  deltadays: PropTypes.number.isRequired,
+  deltaxp: PropTypes.number,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  category: PropTypes.string.isRequired,
+  categoryicon: PropTypes.string,
 }
 
 export default Activity;

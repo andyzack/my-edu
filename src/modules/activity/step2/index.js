@@ -4,7 +4,6 @@ function Step2(props) {
   if (props.currentStep !== 2) {
     return null
   }
-  
   return (
     <div className={'innerbox-step'+props.currentStep}>
       {/* ACTIVITY HEADING SECTION */}
